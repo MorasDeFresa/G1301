@@ -3,36 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Hoja de Vida</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Juan David Castro</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
     <div class="container">
-        <img src="/api/placeholder/150/150" alt="Foto de perfil" class="photo" id="photo">
-        <input type="file" id="photoInput" accept="image/*" class="hidden">
+        <section class="banner">
+            <img src="public/img/Ph.png" alt="Foto de perfil" class="photo" id="photo">
+            <input type="file" id="photoInput" accept="image/*" class="hidden">
+        </section>
         
-        <h1>Juan David Castro Mora</h1>
         
+        <center><h1>Juan David Castro Mora</h1></center>
+        <p>Interactua con los campos para cambiar la información, para guardar solo haz click fuera del recuadro de texto</p>
+        <hr>
         <div class="section">
             <h2>Información Personal</h2>
-            <p id="personalInfo">Haga clic para editar la información personal</p>
+            <div class="groupDiv">
+                <p class="form">Dirección:</p>
+                <p class="editable" id="address">Calle Principal 123, Ciudad, País</p>
+            </div>
+            <div class="groupDiv">
+                <p class="form">Teléfono:</p>
+                <p class="editable" id="phone">Calle Principal 123, Ciudad, País</p>
+            </div>
+            <div class="groupDiv">
+                <p class="form">Correo Electrónico:</p>
+                <p class="editable" id="email">Calle Principal 123, Ciudad, País</p>
+            </div>
         </div>
-        
+        <hr>
         <div class="section">
             <h2>Objetivo Profesional</h2>
             <p id="professionalObjective">Haga clic para editar el objetivo profesional</p>
         </div>
-        
+        <hr>
         <div class="section">
             <h2>Experiencia Laboral</h2>
-            <p id="workExperience">Haga clic para editar la experiencia laboral</p>
+            <p class="editable" id="tittleJob">Asistente de soporte tecnico</p>
+            <div class="groupDiv">
+                <p class="form">Empresa:</p>
+                <p class="editable" id="enterprise">XYZ Solutions</p>
+            </div>
+            <div class="groupDiv">
+                <p class="form">Fecha:</p>
+                <p class="editable" id="dateJob">Julio 2018 - diciembre 2019</p>
+            </div>
+            <div class="groupDiv">
+                <p class="form">Responsabilidades:</p>
+                <p class="editable" id="responsabilities">Desarrollo y mantenimiento de aplicaciones web.</p>
+            </div>
         </div>
-        
+        <hr>
         <div class="section">
             <h2>Educación</h2>
-            <p id="education">Haga clic para editar la educación</p>
+            <p class="editable" id="tittleEducation">Ingeniería en Informática</p>
+            <div class="groupDiv">
+                <p class="form">Institución:</p>
+                <p class="editable" id="school">Universidad Nacional</p>
+            </div>
+            <div class="groupDiv">
+                <p class="form">Fecha de Graduación:</p>
+                <p class="editable" id="dateEducation">Julio 2018 - diciembre 2019</p>
+            </div>
         </div>
+        <hr>
     </div>
-    <script src="./script.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

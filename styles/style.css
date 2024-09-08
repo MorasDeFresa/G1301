@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+h1, h2 {
+    color: #668C4E;
+}
+.photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 20px;
+    display: block;
+    cursor: pointer;
+    opacity: 1; 
+    transition: opacity 0.3s ease;
+}
+.photo:hover{
+    opacity: 0.5;
+}
+.groupDiv{
+    display: flex;
+}
+.section {
+    margin-bottom: 20px;
+}
+.hidden {
+    display: none;
+}
+.form{
+    margin-right: 0.5rem;
+}
+.editable{
+    cursor: pointer ;
+}
+.banner{
+    background-image: url('../public/img/Banner.png');
+    background-size: cover; 
+    background-position: top;
+    background-repeat: no-repeat; 
+}
