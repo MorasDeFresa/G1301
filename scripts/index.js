@@ -31,6 +31,7 @@ makeEditable('responsabilities');
 makeEditable('tittleEducation');
 makeEditable('school');
 makeEditable('dateEducation');
+makeEditable('professionalObjective');
 
 const photoInput = document.getElementById('photoInput');
 const photo = document.getElementById('photo');
